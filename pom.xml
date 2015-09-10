@@ -8,14 +8,14 @@
     <version>1.0.0</version>
     <packaging>war</packaging>
 
-    <name>Dubbo Monitor</name>
-    <description>Monitor module of dubbo project</description>
+    <name>Dubbo Monitor for RD</name>
+    <description>Monitor module of dubbo project for Relational Database</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <dubbo.version>2.8.4</dubbo.version>
-        <spring.version>4.1.6.RELEASE</spring.version>
+        <spring.version>3.2.9.RELEASE</spring.version>
         <zookeeper.version>3.4.6</zookeeper.version>
         <zkclient.version>0.1</zkclient.version>
         <curator.version>2.5.0</curator.version>
@@ -209,6 +209,16 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-web</artifactId>
+            <version>3.2.8.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-config</artifactId>
+            <version>3.2.8.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
